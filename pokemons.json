@@ -1,12 +1,606 @@
-{
-    "pokemons": [
-        {
-            "name": "Bulbasaur",
-            "sillhuette": "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣰⣦⣴⡆⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⠀⠀\n⠀⠀⠀⠀⢀⣤⣤⣀⣀⣀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀\n⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀\n⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀\n⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀\n⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀\n⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀\n⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀\n⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀\n⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀\n⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠟⠀⠈⠿⣿⣿⣿⣿⣿⡿⠛⢿⣿⣿⣿⣿⡟⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠙⠛⠛⠁⠀⠀⠀⠀⠛⠿⠿⠿⠋⠀⠀⠈⠛⠛⠛⠋⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-        },
-        {
-            "name": "Pikachu",
-            "sillhuette": "⠀⠀⠀⠀⠀⢠⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⢀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⣠⣦⠀⠀\n            ⠀⠀⠀⠀⢸⣿⣟⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⡿⠟⠁⢀⣤⣾⣿⣿⡆⠀\n            ⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠋⠁⠀⠀⣰⣿⣿⣿⣿⣿⡇⠀\n            ⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⢠⣾⣿⣿⣿⣿⡿⠟⠁⠀\n            ⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠘⣿⣿⡿⠟⠉⠀⠀⠀⠀\n            ⠀⠀⠀⣀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⢀⣹⣿⠀⠀⠀⠀⠀⠀⠀\n            ⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢿⣿⠋⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠈⠉⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡿⠇⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⠿⠿⢿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⠇⠀⠀⠀⠀⠈⢿⡇"
-        }
-    ]   
-}
+[
+    {
+        "name": "Bulbasaur",
+        "sillhuette":"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣰⣦⣴⡆⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⠀⠀\n⠀⠀⠀⠀⢀⣤⣤⣀⣀⣀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀\n⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀\n⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀\n⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀\n⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀\n⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀\n⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀\n⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀\n⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀\n⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠟⠀⠈⠿⣿⣿⣿⣿⣿⡿⠛⢿⣿⣿⣿⣿⡟⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠙⠛⠛⠁⠀⠀⠀⠀⠛⠿⠿⠿⠋⠀⠀⠈⠛⠛⠛⠋⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+    },
+    {
+        "name": "Ivysaur",
+        "sillhuette": "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣴⣶⣦⡀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀\n        ⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣷⣄⣠⣤⣿⣿⣦⣤⠀⠀⠀⠀\n        ⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀⠀⠀\n        ⠀⢰⣿⣷⣶⣦⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⣀⠀⠀⠀\n        ⢶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀\n        ⠹⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀\n        ⠀⠈⠙⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧\n        ⠀⠀⠀⠀⢀⣠⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋\n        ⠀⠀⠠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠀⠀\n        ⠀⠀⠀⠛⠿⠟⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀\n        ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⡆⠀⠀\n        ⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⡟⠛⠿⣿⣿⣿⣿⣿⠀⠀⢻⣿⣿⣿⡇⠀⠀\n        ⠀⠀⠀⠀⠀⠀⠙⠻⠿⠟⠀⠀⠀⠈⠻⣿⣿⣿⠆⠀⠀⠙⠛⠛⠃"
+    },
+    {
+        "name": "Venusaur",
+        "sillhuette": "⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣶⣿⣷⣤⣤⣶⣶⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀\n        ⠀⠀⠀⠀⢠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀\n        ⠀⠀⠀⠀⠿⢋⣽⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⠻⣿⣿⣿⣿⣿⣿⡿⠇⠀⠀⠀⠀\n        ⠀⠀⠀⠀⠀⠀⠙⠛⠿⣿⣿⣁⣼⣿⣿⣿⣿⣇⣘⣿⣿⣿⠿⠛⠁⠀⠀⠀⠀⠀\n        ⠀⠀⢀⣴⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣀⠀⠀⠀\n        ⣀⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⡄\n        ⠉⠛⠛⢫⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡙⠛⠛⠀\n        ⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀\n        ⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀\n        ⠀⠀⠀⠠⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠁⠀⠀⠀\n        ⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⠃⠉⠉⠉⠉⠉⣹⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀\n        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠛⠻⠿⠿⠏"
+    },
+    {
+        "name": "Charmander",
+        "sillhuette": "⠀⠀⠀⢀⣴⣶⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n        ⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n        ⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n        ⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n        ⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⢀⣸⣇⠀\n        ⠀⠀⠀⠈⢙⣿⣿⣿⣿⣿⣧⣄⣀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣄\n        ⢠⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⡆⠀⢠⣿⣿⣿⣧\n        ⠀⠛⠛⠛⠛⣿⣿⣿⣿⣿⣿⣿⣿⠛⠛⠉⠁⠀⠈⢻⣿⣿⡇\n        ⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⣼⠁⠀\n        ⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⢀⣀⣤⣾⡟⠀⠀\n        ⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀\n        ⠀⠀⣸⣿⣿⣿⡿⠋⠉⠉⠉⠛⢿⣿⣿⣿⠛⠉⠀⠀⠀⠀⠀\n        ⠀⠘⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠈⠻⠿⠿⠗"
+    },
+    {
+        "name": "Charmeleon",
+        "sillhuette": ""
+    },
+    {
+        "name": "Charizard",
+        "sillhuette": ""
+    },
+    {
+        "name": "Squirtle",
+        "sillhuette": ""
+    },
+    {
+        "name": "Wartortle",
+        "sillhuette": ""
+    },
+    {
+        "name": "Blastoise",
+        "sillhuette": ""
+    },
+    {
+        "name": "Caterpie",
+        "sillhuette": ""
+    },
+    {
+        "name": "Metapod",
+        "sillhuette": ""
+    },
+    {
+        "name": "Butterfree",
+        "sillhuette": ""
+    },
+    {
+        "name": "Weedle",
+        "sillhuette": ""
+    },
+    {
+        "name": "Kakuna",
+        "sillhuette": ""
+    },
+    {
+        "name": "Beedrill",
+        "sillhuette": ""
+    },
+    {
+        "name": "Pidgey",
+        "sillhuette": ""
+    },
+    {
+        "name": "Pidgeotto",
+        "sillhuette": ""
+    },
+    {
+        "name": "Pidgeot",
+        "sillhuette": ""
+    },
+    {
+        "name": "Rattata",
+        "sillhuette": ""
+    },
+    {
+        "name": "Raticate",
+        "sillhuette": ""
+    },
+    {
+        "name": "Spearow",
+        "sillhuette": ""
+    },
+    {
+        "name": "Fearow",
+        "sillhuette": ""
+    },
+    {
+        "name": "Ekans",
+        "sillhuette": ""
+    },
+    {
+        "name": "Arbok",
+        "sillhuette": ""
+    },
+    {
+        "name": "Pikachu",
+        "sillhuette": "⠀⠀⠀⠀⠀⢠⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⢀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⣠⣦⠀⠀\n            ⠀⠀⠀⠀⢸⣿⣟⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⡿⠟⠁⢀⣤⣾⣿⣿⡆⠀\n            ⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠋⠁⠀⠀⣰⣿⣿⣿⣿⣿⡇⠀\n            ⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⢠⣾⣿⣿⣿⣿⡿⠟⠁⠀\n            ⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠘⣿⣿⡿⠟⠉⠀⠀⠀⠀\n            ⠀⠀⠀⣀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⢀⣹⣿⠀⠀⠀⠀⠀⠀⠀\n            ⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢿⣿⠋⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠈⠉⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡿⠇⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⠿⠿⢿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀\n            ⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⠇⠀⠀⠀⠀⠈⢿⡇"
+    },
+    {
+        "name": "Raichu",
+        "sillhuette": ""
+    },
+    {
+        "name": "Sandshrew",
+        "sillhuette": ""
+    },
+    {
+        "name": "Sandslash",
+        "sillhuette": ""
+    },
+    {
+        "name": "Nidoran♀",
+        "sillhuette": ""
+    },
+    {
+        "name": "Nidorina",
+        "sillhuette": ""
+    },
+    {
+        "name": "Nidoqueen",
+        "sillhuette": ""
+    },
+    {
+        "name": "Nidoran♂",
+        "sillhuette": ""
+    },
+    {
+        "name": "Nidorino",
+        "sillhuette": ""
+    },
+    {
+        "name": "Nidoking",
+        "sillhuette": ""
+    },
+    {
+        "name": "Clefairy",
+        "sillhuette": ""
+    },
+    {
+        "name": "Clefable",
+        "sillhuette": ""
+    },
+    {
+        "name": "Vulpix",
+        "sillhuette": ""
+    },
+    {
+        "name": "Ninetales",
+        "sillhuette": ""
+    },
+    {
+        "name": "Jigglypuff",
+        "sillhuette": ""
+    },
+    {
+        "name": "Wigglytuff",
+        "sillhuette": ""
+    },
+    {
+        "name": "Zubat",
+        "sillhuette": ""
+    },
+    {
+        "name": "Golbat",
+        "sillhuette": ""
+    },
+    {
+        "name": "Oddish",
+        "sillhuette": ""
+    },
+    {
+        "name": "Gloom",
+        "sillhuette": ""
+    },
+    {
+        "name": "Vileplume",
+        "sillhuette": ""
+    },
+    {
+        "name": "Paras",
+        "sillhuette": ""
+    },
+    {
+        "name": "Parasect",
+        "sillhuette": ""
+    },
+    {
+        "name": "Venonat",
+        "sillhuette": ""
+    },
+    {
+        "name": "Venomoth",
+        "sillhuette": ""
+    },
+    {
+        "name": "Diglett",
+        "sillhuette": ""
+    },
+    {
+        "name": "Dugtrio",
+        "sillhuette": ""
+    },
+    {
+        "name": "Meowth",
+        "sillhuette": ""
+    },
+    {
+        "name": "Persian",
+        "sillhuette": ""
+    },
+    {
+        "name": "Psyduck",
+        "sillhuette": ""
+    },
+    {
+        "name": "Golduck",
+        "sillhuette": ""
+    },
+    {
+        "name": "Mankey",
+        "sillhuette": ""
+    },
+    {
+        "name": "Primeape",
+        "sillhuette": ""
+    },
+    {
+        "name": "Growlithe",
+        "sillhuette": ""
+    },
+    {
+        "name": "Arcanine",
+        "sillhuette": ""
+    },
+    {
+        "name": "Poliwag",
+        "sillhuette": ""
+    },
+    {
+        "name": "Poliwhirl",
+        "sillhuette": ""
+    },
+    {
+        "name": "Poliwrath",
+        "sillhuette": ""
+    },
+    {
+        "name": "Abra",
+        "sillhuette": ""
+    },
+    {
+        "name": "Kadabra",
+        "sillhuette": ""
+    },
+    {
+        "name": "Alakazam",
+        "sillhuette": ""
+    },
+    {
+        "name": "Machop",
+        "sillhuette": ""
+    },
+    {
+        "name": "Machoke",
+        "sillhuette": ""
+    },
+    {
+        "name": "Machamp",
+        "sillhuette": ""
+    },
+    {
+        "name": "Bellsprout",
+        "sillhuette": ""
+    },
+    {
+        "name": "Weepinbell",
+        "sillhuette": ""
+    },
+    {
+        "name": "Victreebel",
+        "sillhuette": ""
+    },
+    {
+        "name": "Tentacool",
+        "sillhuette": ""
+    },
+    {
+        "name": "Tentacruel",
+        "sillhuette": ""
+    },
+    {
+        "name": "Geodude",
+        "sillhuette": ""
+    },
+    {
+        "name": "Graveler",
+        "sillhuette": ""
+    },
+    {
+        "name": "Golem",
+        "sillhuette": ""
+    },
+    {
+        "name": "Ponyta",
+        "sillhuette": ""
+    },
+    {
+        "name": "Rapidash",
+        "sillhuette": ""
+    },
+    {
+        "name": "Slowpoke",
+        "sillhuette": ""
+    },
+    {
+        "name": "Slowbro",
+        "sillhuette": ""
+    },
+    {
+        "name": "Magnemite",
+        "sillhuette": ""
+    },
+    {
+        "name": "Magneton",
+        "sillhuette": ""
+    },
+    {
+        "name": "Farfetch’d",
+        "sillhuette": ""
+    },
+    {
+        "name": "Doduo",
+        "sillhuette": ""
+    },
+    {
+        "name": "Dodrio",
+        "sillhuette": ""
+    },
+    {
+        "name": "Seel",
+        "sillhuette": ""
+    },
+    {
+        "name": "Dewgong",
+        "sillhuette": ""
+    },
+    {
+        "name": "Grimer",
+        "sillhuette": ""
+    },
+    {
+        "name": "Muk",
+        "sillhuette": ""
+    },
+    {
+        "name": "Shellder",
+        "sillhuette": ""
+    },
+    {
+        "name": "Cloyster",
+        "sillhuette": ""
+    },
+    {
+        "name": "Gastly",
+        "sillhuette": ""
+    },
+    {
+        "name": "Haunter",
+        "sillhuette": ""
+    },
+    {
+        "name": "Gengar",
+        "sillhuette": ""
+    },
+    {
+        "name": "Onix",
+        "sillhuette": ""
+    },
+    {
+        "name": "Drowzee",
+        "sillhuette": ""
+    },
+    {
+        "name": "Hypno",
+        "sillhuette": ""
+    },
+    {
+        "name": "Krabby",
+        "sillhuette": ""
+    },
+    {
+        "name": "Kingler",
+        "sillhuette": ""
+    },
+    {
+        "name": "Voltorb",
+        "sillhuette": ""
+    },
+    {
+        "name": "Electrode",
+        "sillhuette": ""
+    },
+    {
+        "name": "Exeggcute",
+        "sillhuette": ""
+    },
+    {
+        "name": "Exeggutor",
+        "sillhuette": ""
+    },
+    {
+        "name": "Cubone",
+        "sillhuette": ""
+    },
+    {
+        "name": "Marowak",
+        "sillhuette": ""
+    },
+    {
+        "name": "Hitmonlee",
+        "sillhuette": ""
+    },
+    {
+        "name": "Hitmonchan",
+        "sillhuette": ""
+    },
+    {
+        "name": "Lickitung",
+        "sillhuette": ""
+    },
+    {
+        "name": "Koffing",
+        "sillhuette": ""
+    },
+    {
+        "name": "Weezing",
+        "sillhuette": ""
+    },
+    {
+        "name": "Rhyhorn",
+        "sillhuette": ""
+    },
+    {
+        "name": "Rhydon",
+        "sillhuette": ""
+    },
+    {
+        "name": "Chansey",
+        "sillhuette": ""
+    },
+    {
+        "name": "Tangela",
+        "sillhuette": ""
+    },
+    {
+        "name": "Kangaskhan",
+        "sillhuette": ""
+    },
+    {
+        "name": "Horsea",
+        "sillhuette": ""
+    },
+    {
+        "name": "Seadra",
+        "sillhuette": ""
+    },
+    {
+        "name": "Goldeen",
+        "sillhuette": ""
+    },
+    {
+        "name": "Seaking",
+        "sillhuette": ""
+    },
+    {
+        "name": "Staryu",
+        "sillhuette": ""
+    },
+    {
+        "name": "Starmie",
+        "sillhuette": ""
+    },
+    {
+        "name": "Mr. Mime",
+        "sillhuette": ""
+    },
+    {
+        "name": "Scyther",
+        "sillhuette": ""
+    },
+    {
+        "name": "Jynx",
+        "sillhuette": ""
+    },
+    {
+        "name": "Electabuzz",
+        "sillhuette": ""
+    },
+    {
+        "name": "Magmar",
+        "sillhuette": ""
+    },
+    {
+        "name": "Pinsir",
+        "sillhuette": ""
+    },
+    {
+        "name": "Tauros",
+        "sillhuette": ""
+    },
+    {
+        "name": "Magikarp",
+        "sillhuette": ""
+    },
+    {
+        "name": "Gyarados",
+        "sillhuette": ""
+    },
+    {
+        "name": "Lapras",
+        "sillhuette": ""
+    },
+    {
+        "name": "Ditto",
+        "sillhuette": ""
+    },
+    {
+        "name": "Eevee",
+        "sillhuette": ""
+    },
+    {
+        "name": "Vaporeon",
+        "sillhuette": ""
+    },
+    {
+        "name": "Jolteon",
+        "sillhuette": ""
+    },
+    {
+        "name": "Flareon",
+        "sillhuette": ""
+    },
+    {
+        "name": "Porygon",
+        "sillhuette": ""
+    },
+    {
+        "name": "Omanyte",
+        "sillhuette": ""
+    },
+    {
+        "name": "Omastar",
+        "sillhuette": ""
+    },
+    {
+        "name": "Kabuto",
+        "sillhuette": ""
+    },
+    {
+        "name": "Kabutops",
+        "sillhuette": ""
+    },
+    {
+        "name": "Aerodactyl",
+        "sillhuette": ""
+    },
+    {
+        "name": "Snorlax",
+        "sillhuette": ""
+    },
+    {
+        "name": "Articuno",
+        "sillhuette": ""
+    },
+    {
+        "name": "Zapdos",
+        "sillhuette": ""
+    },
+    {
+        "name": "Moltres",
+        "sillhuette": ""
+    },
+    {
+        "name": "Dratini",
+        "sillhuette": ""
+    },
+    {
+        "name": "Dragonair",
+        "sillhuette": ""
+    },
+    {
+        "name": "Dragonite",
+        "sillhuette": ""
+    },
+    {
+        "name": "Mewtwo",
+        "sillhuette": ""
+    },
+    {
+        "name": "Mew",
+        "sillhuette": ""
+    }    
+]   

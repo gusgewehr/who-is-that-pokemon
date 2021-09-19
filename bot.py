@@ -12,13 +12,13 @@ import time
 @routines.routine(seconds=60.0)
 async def hello(ctx: commands.Context):    
     n = randint(0,1)
-    var = data['pokemons'][n]['sillhuette']
+    var = data[n]['sillhuette']
     acertos.start(n, ctx)
     await ctx.send(f'Quem é esse Pokémon? \n {var}')
     
 @routines.routine(seconds=30, iterations=1)
 async def acertos(n:int, ctx:commands.Context):
-    name = data['pokemons'][n]['name']
+    name = data[n]['name']
     @bot.event()
     async def event_message(message):
         print(message)        
@@ -28,7 +28,7 @@ async def acertos(n:int, ctx:commands.Context):
 
 @routines.routine(seconds=1, iterations=1)
 async def resposta(n: int, ctx: commands.Context):
-    name = data['pokemons'][n]['name']
+    name = data[n]['name']
     await ctx.send(f'{name}')
 
   
